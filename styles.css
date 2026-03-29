@@ -283,17 +283,11 @@ a.cta-btn,
   color: #5f3d4c;
 }
 
-.about-image,
-.hero-card,
-.gallery-card {
-  min-height: 180px;
+.about-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
   border-radius: var(--radius);
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  color: #8a5f70;
-  background: #ffe9ef;
-  border: 1px dashed #ffc7d5;
 }
 
 .review-grid {
@@ -371,6 +365,69 @@ a.cta-btn,
 
 .contact-info li {
   margin-bottom: 0.55rem;
+}
+
+.prices {
+  padding: 2.5rem 0;
+  background: #fff7fa;
+}
+
+.prices .container {
+  max-width: 1000px;
+}
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 1.3rem 0 1.4rem;
+}
+
+.price-item {
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 0.95rem 0.95rem;
+  text-align: center;
+}
+
+.price-item span {
+  display: block;
+  color: #5a4855;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.price-item strong {
+  font-size: 1.05rem;
+  color: #5b2534;
+}
+
+.prices-note {
+  margin: 0.9rem 0 1.35rem;
+  color: #674155;
+}
+
+.btn,
+.btn-primary {
+  display: inline-block;
+  padding: 0.62rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(130deg, var(--brand), #ffdbd8);
+  color: #511d2c;
+  border-color: var(--brand-dark);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
 }
 
 .contact-form {
