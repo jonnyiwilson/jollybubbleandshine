@@ -6,12 +6,43 @@
   <title>Jolly Bubble and Shine | Deep Cleaning Specialists in Norwich</title>
   <meta name="description" content="Jolly Bubble and Shine offers friendly, reliable deep cleaning and home cleaning services in Norwich. Contact us for one-off cleans, regular cleaning and more." />
   <meta name="theme-color" content="#FFE6EB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jolly Bubble and Shine | Deep Cleaning Specialists in Norwich" />
+  <meta property="og:description" content="Friendly, reliable cleaning services in Norwich: deep clean, regular clean, end of tenancy and more." />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jolly Bubble and Shine | Deep Cleaning in Norwich" />
+  <meta name="twitter:description" content="Friendly, reliable cleaning services for homes and properties across Norwich." />
+  <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jolly Bubble and Shine",
+    "image": "https://example.com/images/og-image.jpg",
+    "telephone": "+447359823215",
+    "email": "Jollycleans@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Norwich",
+      "addressRegion": "Norfolk",
+      "addressCountry": "GB"
+    },
+    "url": "https://example.com",
+    "sameAs": [
+      "https://www.instagram.com/jolly.bubbleandshine",
+      "https://www.facebook.com/people/Jolly-Bubble-and-Shine/61581744665888/"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="bubble-bg"></div>
   <header class="site-header" id="site-header">
     <div class="container header-inner">
@@ -29,7 +60,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
@@ -98,7 +129,7 @@
           </ul>
         </div>
         <div class="about-image" aria-hidden="true">
-          <img src="Images/Profile Image.jpg" alt="Liv - Jolly Bubble and Shine Team Member" />
+          <img src="Images/Profile Image.jpg" alt="Liv - Jolly Bubble and Shine Team Member" loading="lazy" />
         </div>
       </div>
     </section>
@@ -118,19 +149,19 @@
     <section id="reviews" class="section reviews">
       <div class="container">
         <h2>Reviews</h2>
-        <p class="section-intro">Real kindness from customers (placeholder content, swap when ready).</p>
+        <p class="section-intro">Real feedback from happy Norwich customers.</p>
         <div class="review-grid">
           <article class="review-card">
-            <p>“Absolutely lovely service and such a difference in our home. Everything felt fresh, spotless and beautifully finished.”</p>
-            <footer>— Client Name</footer>
+            <p>“Jolly Bubble and Shine did a very thorough deep clean. My house was a mess and they made it look amazing. I was genuinely impressed. Liv worked tirelessly, noticed even the smallest details, and got rid of dirt I didn’t even realise was there. I’ve already recommended her to others and will definitely be using her again.”</p>
+            <footer>— Local Customer</footer>
           </article>
           <article class="review-card">
-            <p>“Friendly, reliable and very thorough. I would happily recommend Jolly Bubble and Shine.”</p>
-            <footer>— Client Name</footer>
+            <p>“Liv is the absolute best at what she does. She doesn’t stop until your home is immaculate. I’ve never experienced a cleaner this thorough before. The results speak for themselves.”</p>
+            <footer>— Happy Client</footer>
           </article>
           <article class="review-card">
-            <p>“Prompt communication, careful cleaning and a warm, pleasant team. A great local service.”</p>
-            <footer>— Client Name</footer>
+            <p>“Liv goes above and beyond every time. There’s nothing better than coming home after she’s been — everything feels fresh, clean, and done properly. Couldn’t recommend her more.”</p>
+            <footer>— Satisfied Customer</footer>
           </article>
         </div>
       </div>
@@ -252,7 +283,7 @@
           <input id="name" name="name" type="text" required placeholder="Your name" />
 
           <label for="contact">Phone or Email</label>
-          <input id="contact" name="contact" type="text" inputmode="tel" autocomplete="tel" required placeholder="Email or phone" />
+          <input id="contact" name="contact" type="text" inputmode="tel" autocomplete="tel" required placeholder="e.g. 07359 823215 or email@example.com" pattern=".{5,}" title="Enter your phone number or email address" />
 
           <label for="service">Service Needed</label>
           <select id="service" name="service" required>
@@ -285,13 +316,13 @@
         <p>Email: Jollycleans@gmail.com</p>
       </div>
       <div class="social-links">
-        <a href="https://www.instagram.com/jolly.bubbleandshine" aria-label="Instagram">Instagram</a>
-        <a href="https://www.facebook.com/people/Jolly-Bubble-and-Shine/61581744665888/" aria-label="Facebook">Facebook</a>
+        <a href="https://www.instagram.com/jolly.bubbleandshine" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Jolly-Bubble-and-Shine/61581744665888/" aria-label="Facebook" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
     <p class="copyright">© Jolly Bubble and Shine. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
