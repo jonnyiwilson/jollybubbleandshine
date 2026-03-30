@@ -3,11 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const successMessage = document.getElementById('form-success');
 
   if (form && successMessage) {
+    const replyToField = document.getElementById('replyto-field');
+
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
       const contactInput = form.querySelector('#contact');
       const contactValue = contactInput ? contactInput.value.trim() : '';
+      const submitButton = form.querySelector('button[type="submit"]');
 
       if (contactValue.length < 5) {
         successMessage.textContent = 'Please enter a valid phone number or email address.';
@@ -15,11 +18,52 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      successMessage.textContent = 'Thanks! Your enquiry has been received. We will be in touch shortly.';
-      successMessage.style.color = '#267a3e';
-      form.reset();
-      const submitButton = form.querySelector('button[type="submit"]');
-      if (submitButton) submitButton.blur();
+      if (replyToField) {
+        replyToField.value = contactValue;
+      }
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+      }
+      successMessage.textContent = 'Sending your enquiry…';
+      successMessage.style.color = '#333';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            return response.json().then((data) => {
+              throw data;
+            });
+          }
+          return response.json();
+        })
+        .then(() => {
+          successMessage.textContent = 'Thanks! Your enquiry was sent successfully.';
+          successMessage.style.color = '#267a3e';
+          form.reset();
+        })
+        .catch((error) => {
+          let message = 'Sorry, something went wrong. Please try again later.';
+          if (error && error.errors && error.errors.length) {
+            message = error.errors.map((e) => e.message).join(' ');
+          }
+          successMessage.textContent = message;
+          successMessage.style.color = '#b22a48';
+        })
+        .finally(() => {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send enquiry';
+            submitButton.blur();
+          }
+        });
     });
   }
 

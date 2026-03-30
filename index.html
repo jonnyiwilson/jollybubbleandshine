@@ -15,6 +15,7 @@
   <meta name="twitter:title" content="Jolly Bubble and Shine | Deep Cleaning in Norwich" />
   <meta name="twitter:description" content="Friendly, reliable cleaning services for homes and properties across Norwich." />
   <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg" />
+  <link rel="canonical" href="https://example.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
@@ -22,21 +23,91 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Jolly Bubble and Shine",
-    "image": "https://example.com/images/og-image.jpg",
-    "telephone": "+447359823215",
-    "email": "Jollycleans@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Norwich",
-      "addressRegion": "Norfolk",
-      "addressCountry": "GB"
-    },
-    "url": "https://example.com",
-    "sameAs": [
-      "https://www.instagram.com/jolly.bubbleandshine",
-      "https://www.facebook.com/people/Jolly-Bubble-and-Shine/61581744665888/"
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Jolly Bubble and Shine",
+        "image": "https://example.com/images/og-image.jpg",
+        "telephone": "+447359823215",
+        "email": "Jollycleans@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Norwich",
+          "addressRegion": "Norfolk",
+          "addressCountry": "GB"
+        },
+        "url": "https://example.com",
+        "sameAs": [
+          "https://www.instagram.com/jolly.bubbleandshine",
+          "https://www.facebook.com/people/Jolly-Bubble-and-Shine/61581744665888/"
+        ],
+        "priceRange": "££",
+        "areaServed": "Norwich, Norfolk",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "hasMap": "https://www.google.com/maps/place/Norwich",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "320"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": "Local Customer",
+            "reviewBody": "Jolly Bubble and Shine did a very thorough deep clean. My house was a mess and they made it look amazing. I was genuinely impressed. Liv worked tirelessly, noticed even the smallest details, and got rid of dirt I didn’t even realise was there. I’ve already recommended her to others and will definitely be using her again.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": "Happy Client",
+            "reviewBody": "Liv is the absolute best at what she does. She doesn’t stop until your home is immaculate. I’ve never experienced a cleaner this thorough before. The results speak for themselves.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": "Satisfied Customer",
+            "reviewBody": "Liv goes above and beyond every time. There’s nothing better than coming home after she’s been — everything feels fresh, clean, and done properly. Couldn’t recommend her more.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://example.com/#services"},
+          {"@type": "ListItem", "position": 3, "name": "Contact", "item": "https://example.com/#contact"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which areas do you cover?",
+            "acceptedAnswer": {"@type": "Answer", "text": "We are based in Norwich and cover selected surrounding areas. Contact us with your postcode and we can confirm availability."}
+          },
+          {
+            "@type": "Question",
+            "name": "What types of cleaning do you offer?",
+            "acceptedAnswer": {"@type": "Answer", "text": "We offer regular cleaning and one-off deep cleans, depending on what your home needs and current availability."}
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to provide products or equipment?",
+            "acceptedAnswer": {"@type": "Answer", "text": "This can be agreed when booking. If you have preferred products or specific requirements, these can be discussed in advance."}
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -278,7 +349,18 @@
             <li><strong>Location:</strong> Norwich, Norfolk</li>
           </ul>
         </div>
-        <form class="contact-form" id="contact-form" aria-label="Contact form">
+        <form
+          class="contact-form"
+          id="contact-form"
+          aria-label="Contact form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          novalidate
+        >
+          <input type="hidden" name="_subject" value="Jolly Bubble and Shine enquiry" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_replyto" id="replyto-field" />
+
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required placeholder="Your name" />
 
