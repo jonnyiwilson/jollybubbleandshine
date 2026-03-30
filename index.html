@@ -29,7 +29,7 @@
         "name": "Jolly Bubble and Shine",
         "image": "https://example.com/images/og-image.jpg",
         "telephone": "+447359823215",
-        "email": "Jollycleans@gmail.com",
+        "email": "jollycleans@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Norwich",
@@ -99,7 +99,7 @@
           {
             "@type": "Question",
             "name": "What types of cleaning do you offer?",
-            "acceptedAnswer": {"@type": "Answer", "text": "We offer regular cleaning and one-off deep cleans, depending on what your home needs and current availability."}
+            "acceptedAnswer": {"@type": "Answer", "text": "We offer Deep Cleaning, Regular Cleaning, End of Tenancy, Move In / Move Out, and Targeted Deep Cleans for areas like kitchens and bathrooms."}
           },
           {
             "@type": "Question",
@@ -117,7 +117,9 @@
   <div class="bubble-bg"></div>
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo" aria-label="Jolly Bubble and Shine logo">Jolly Bubble & Shine</a>
+      <a href="#home" class="logo" aria-label="Jolly Bubble and Shine home">
+        <img src="Images/Logo.jpg" alt="Jolly Bubble and Shine" loading="eager" />
+      </a>
       <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="#home">Home</a>
@@ -139,8 +141,8 @@
           <h1>Deep Cleaning Specialists in Norwich</h1>
           <p class="hero-subheading">Friendly, reliable cleaning services for homes and properties across Norwich. From one-off deep cleans to regular support, we make your space feel fresh, bright and beautifully clean.</p>
           <div class="hero-buttons">
-            <a class="primary-btn" href="#contact">Get a Free Quote</a>
-            <a class="secondary-btn" href="tel:+441234567890">Call Now</a>
+            <a class="primary-btn" href="#contact">Request a quote</a>
+            <a class="secondary-btn" href="tel:+441234567890">Call or message</a>
           </div>
           <ul class="trust-line" aria-label="Service highlights">
             <li>Norwich based</li>
@@ -156,29 +158,50 @@
         <h2>Our Services</h2>
         <p class="section-intro">Soft, simple and easy-to-scan service packs for every home in Norwich.</p>
         <div class="service-grid">
-          <article class="card">
+          <article class="card service-card">
             <h3>Deep Cleaning</h3>
             <p>A thorough top-to-bottom clean for homes that need extra care and attention.</p>
+            <ul class="service-points">
+              <li>Ideal for first visits or overdue cleans</li>
+              <li>Focused on detail-heavy areas throughout the home</li>
+              <li>Tailored to the condition of your space</li>
+            </ul>
           </article>
-          <article class="card">
+          <article class="card service-card">
             <h3>Regular Cleaning</h3>
             <p>Flexible cleaning support to help keep your home fresh, tidy and under control.</p>
+            <ul class="service-points">
+              <li>Weekly, fortnightly, or monthly visits</li>
+              <li>Built around your home and routine</li>
+              <li>Designed to keep things manageable</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>End of Tenancy Cleaning</h3>
+          <article class="card service-card">
+            <h3>End of Tenancy</h3>
             <p>Detailed cleans for tenants, landlords and properties that need to be ready for handover.</p>
+            <ul class="service-points">
+              <li>Perfect for move-out preparation</li>
+              <li>Attention to kitchens, bathrooms, and high-use areas</li>
+              <li>Suitable for rented homes and managed properties</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Kitchen Cleans</h3>
-            <p>Specialist focus on kitchens for sparkling surfaces and hygienic finishes.</p>
+          <article class="card service-card">
+            <h3>Targeted Deep Cleans</h3>
+            <p>Focused deep cleans for specific areas like kitchens and bathrooms that need a full reset.</p>
+            <ul class="service-points">
+              <li>Useful for high-build-up spaces</li>
+              <li>Great when one room needs extra attention</li>
+              <li>Can be added to a wider clean if needed</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Bathroom Cleans</h3>
-            <p>Fresh and thorough bathroom cleaning with attention to grout, taps and fixtures.</p>
-          </article>
-          <article class="card">
-            <h3>Move In / Move Out Cleaning</h3>
+          <article class="card service-card">
+            <h3>Move In / Move Out</h3>
             <p>Reliable support to make moving easier with a clean, ready-to-live-in home.</p>
+            <ul class="service-points">
+              <li>Fresh start before moving in</li>
+              <li>Helpful before handing keys back</li>
+              <li>Prepared around your moving timeline</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -186,33 +209,21 @@
 
     <section id="about" class="section about">
       <div class="container about-grid">
-        <div class="about-text">
-          <h2>Why choose Jolly Bubble and Shine?</h2>
-          <p>Jolly Bubble and Shine offers a personal, friendly cleaning service with a real eye for detail. Whether you need a one-off deep clean or regular help around the home, we aim to make your space feel lighter, fresher and easier to enjoy.</p>
-          <ul class="features-list">
-            <li>Friendly and reliable service</li>
-            <li>Careful attention to detail</li>
-            <li>Flexible cleaning options</li>
-            <li>Tailored to your home and routine</li>
-            <li>Norwich-based local service</li>
-            <li>Fully Insured & DBS Checked</li>
-            <li>We love leaving homes fresh, bright and sparkling</li>
-          </ul>
+        <div class="about-image">
+          <img src="Images/Profile Image.jpg" alt="Liv from Jolly Bubble & Shine" loading="lazy" />
         </div>
-        <div class="about-image" aria-hidden="true">
-          <img src="Images/Profile Image.jpg" alt="Liv - Jolly Bubble and Shine Team Member" loading="lazy" />
-        </div>
-      </div>
-    </section>
 
-    <section id="gallery" class="section gallery">
-      <div class="container">
-        <h2>See the shine for yourself</h2>
-        <p class="section-intro">Before and after highlights: a taste of the sparkle we deliver.</p>
-        <div class="gallery-grid">
-          <div class="gallery-card">Kitchen Deep Clean</div>
-          <div class="gallery-card">Bathroom Refresh</div>
-          <div class="gallery-card">Full Home Clean</div>
+        <div class="about-text">
+          <h2>Get to know the face behind Jolly Bubble & Shine</h2>
+          <p class="about-intro">Hi, I’m Liv — the one behind the sparkle.</p>
+          <p>I started Jolly Bubble & Shine because I genuinely love turning homes into fresh, calm spaces. There’s nothing better than that just-cleaned feeling.</p>
+          <ul class="features-list">
+            <li>Detail-focused — I notice the little things others miss</li>
+            <li>I take pride in creating calm, clean, cared-for homes</li>
+            <li>Friendly, reliable, and easy to work with</li>
+          </ul>
+          <p>If you want a reliable cleaner who takes pride in the details, request a quote.</p>
+          <p class="about-closing">Thank you for supporting my small business — it means a lot.</p>
         </div>
       </div>
     </section>
@@ -223,7 +234,7 @@
         <p class="section-intro">Real feedback from happy Norwich customers.</p>
         <div class="review-grid">
           <article class="review-card">
-            <p>“Jolly Bubble and Shine did a very thorough deep clean. My house was a mess and they made it look amazing. I was genuinely impressed. Liv worked tirelessly, noticed even the smallest details, and got rid of dirt I didn’t even realise was there. I’ve already recommended her to others and will definitely be using her again.”</p>
+            <p>"Jolly Bubble & Shine did a very thorough deep clean. My house was a mess and they made it look amazing. I was genuinely impressed. Liv worked tirelessly, noticed even the smallest details, and got rid of dirt I didn't even realise was there. I've already recommended her to others and will definitely be using her again."</p>
             <footer>— Local Customer</footer>
           </article>
           <article class="review-card">
@@ -235,51 +246,6 @@
             <footer>— Satisfied Customer</footer>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section id="how-it-works" class="section how-it-works">
-      <div class="container">
-        <h2>How it works</h2>
-        <div class="step-grid">
-          <article class="step-card">
-            <h3>1. Get in touch</h3>
-            <p>Send over a few details about your home and the type of clean you need.</p>
-          </article>
-          <article class="step-card">
-            <h3>2. Receive your quote</h3>
-            <p>We will come back to you with availability and a simple quote.</p>
-          </article>
-          <article class="step-card">
-            <h3>3. Enjoy the sparkle</h3>
-            <p>We arrive, clean with care, and leave your space feeling fresh and bright.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="prices" class="section prices">
-      <div class="container">
-        <h2>Prices</h2>
-        <p class="section-intro">Simple guide prices to give you an idea of cost. Final quotes may vary depending on your home and the work required.</p>
-
-        <div class="prices-grid">
-          <div class="price-item"><span>Regular clean</span><strong>from £20 per hour</strong></div>
-          <div class="price-item"><span>Fortnightly clean</span><strong>from £22 per hour</strong></div>
-          <div class="price-item"><span>One-off clean</span><strong>from £25 per hour</strong></div>
-          <div class="price-item"><span>Deep clean</span><strong>from £90</strong></div>
-          <div class="price-item"><span>End of tenancy clean</span><strong>from £180</strong></div>
-          <div class="price-item"><span>Kitchen deep clean</span><strong>from £45</strong></div>
-          <div class="price-item"><span>Bathroom deep clean</span><strong>from £40</strong></div>
-          <div class="price-item"><span>Oven clean</span><strong>from £35</strong></div>
-          <div class="price-item"><span>Fridge clean</span><strong>from £20</strong></div>
-          <div class="price-item"><span>Interior windows</span><strong>from £30</strong></div>
-          <div class="price-item"><span>Ironing / household help</span><strong>from £20 per hour</strong></div>
-        </div>
-
-        <p class="prices-note">Prices are a guide and may vary depending on property size, condition, location, and individual requirements. Please get in touch for a personalised quote.</p>
-
-        <a href="#contact" class="btn btn-primary">Get a Quote</a>
       </div>
     </section>
 
@@ -302,7 +268,7 @@
               What types of cleaning do you offer?
             </button>
             <div class="accordion-panel">
-              We offer regular cleaning and one-off deep cleans, depending on what your home needs and current availability.
+              We offer Deep Cleaning, Regular Cleaning, End of Tenancy, Move In / Move Out, and Targeted Deep Cleans for areas like kitchens and bathrooms.
             </div>
           </div>
 
@@ -340,14 +306,27 @@
     <section id="contact" class="section contact">
       <div class="container contact-grid">
         <div class="contact-info">
-          <h2>Ready to make your home sparkle?</h2>
-          <p>Get in touch today for a friendly quote and let Jolly Bubble and Shine help bring that fresh, clean feeling back to your home.</p>
-          <ul>
-            <li><strong>Phone:</strong> <a href="tel:+447359823215">07359 823215</a></li>
-            <li><strong>Email:</strong> <a href="mailto:Jollycleans@gmail.com">Jollycleans@gmail.com</a></li>
-            <li><strong>WhatsApp:</strong> <a href="https://wa.me/447359823215">Message us</a></li>
-            <li><strong>Location:</strong> Norwich, Norfolk</li>
-          </ul>
+          <h2>Ready To Get Started?</h2>
+          <p>Let's get your home feeling fresh and sparkling. Drop us a line and we'll send over a friendly, no-pressure quote tailored just for you.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h3>Call or Text</h3>
+              <a href="tel:+447359823215" class="contact-link">07359 823215</a>
+            </div>
+            
+            <div class="contact-method">
+              <h3>Email</h3>
+              <a href="mailto:jollycleans@gmail.com" class="contact-link">jollycleans@gmail.com</a>
+            </div>
+            
+            <div class="contact-method">
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/447359823215" class="contact-link" target="_blank" rel="noopener noreferrer">Send a quick message</a>
+            </div>
+          </div>
+          
+          <p class="contact-location">📍 Norwich, Norfolk</p>
         </div>
         <form
           class="contact-form"
@@ -357,7 +336,7 @@
           method="POST"
           novalidate
         >
-          <input type="hidden" name="_subject" value="Jolly Bubble and Shine enquiry" />
+          <input type="hidden" name="_subject" value="Jolly Bubble & Shine enquiry" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_replyto" id="replyto-field" />
 
@@ -371,9 +350,8 @@
           <select id="service" name="service" required>
             <option value="Deep Cleaning">Deep Cleaning</option>
             <option value="Regular Cleaning">Regular Cleaning</option>
-            <option value="End of Tenancy Cleaning">End of Tenancy Cleaning</option>
-            <option value="Kitchen Cleaning">Kitchen Cleaning</option>
-            <option value="Bathroom Cleaning">Bathroom Cleaning</option>
+            <option value="End of Tenancy">End of Tenancy</option>
+            <option value="Targeted Deep Cleans">Targeted Deep Cleans</option>
             <option value="Move In / Move Out">Move In / Move Out</option>
           </select>
 
@@ -389,20 +367,54 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div>
-        <h3>Jolly Bubble and Shine</h3>
-        <p>Norwich, Norfolk</p>
+      <div class="footer-col">
+        <h3>Jolly Bubble & Shine</h3>
+        <p class="footer-tagline">Norwich-based cleaning services</p>
+        <p class="trust-badge">✓ Fully Insured & DBS Checked</p>
       </div>
-      <div>
-        <p>Phone: 07359 823215</p>
-        <p>Email: Jollycleans@gmail.com</p>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="social-links">
+      
+      <div class="footer-col">
+        <h4>Service Area</h4>
+        <p>Norwich, Norfolk and selected surrounding areas. Contact us with your postcode to confirm availability.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul class="footer-contact">
+          <li><a href="tel:+447359823215">07359 823215</a></li>
+          <li><a href="mailto:jollycleans@gmail.com">jollycleans@gmail.com</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="container footer-bottom">
+      <div class="footer-legal">
+        <ul class="legal-links">
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="mailto:jollycleans@gmail.com?subject=Careers%20Enquiry">Careers</a></li>
+          <li><a href="mailto:jollycleans@gmail.com?subject=Complaint%20or%20service%20concern">Complaints</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
         <a href="https://www.instagram.com/jolly.bubbleandshine" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/people/Jolly-Bubble-and-Shine/61581744665888/" aria-label="Facebook" target="_blank" rel="noopener">Facebook</a>
       </div>
+      
+      <p class="copyright">© 2026 Jolly Bubble & Shine. All rights reserved.</p>
     </div>
-    <p class="copyright">© Jolly Bubble and Shine. All rights reserved.</p>
   </footer>
 
   <script src="script.js" defer></script>

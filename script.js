@@ -1,4 +1,15 @@
+function scrollToTopOnLoad() {
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+}
+
+window.addEventListener('pageshow', function (event) {
+  if (event.persisted) {
+    scrollToTopOnLoad();
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
+  scrollToTopOnLoad();
   const form = document.getElementById('contact-form');
   const successMessage = document.getElementById('form-success');
 
