@@ -509,6 +509,11 @@ a.cta-btn,
   box-shadow: var(--shadow-soft);
 }
 
+.faq .accordion {
+  display: grid;
+  gap: 0.85rem;
+}
+
 .accordion-trigger {
   width: 100%;
   border: none;
