@@ -1,5 +1,5 @@
 function scrollToTopOnLoad() {
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 }
 
 window.addEventListener('pageshow', function (event) {
@@ -33,11 +33,17 @@ document.addEventListener('DOMContentLoaded', function () {
         replyToField.value = contactValue;
       }
 
+      if (form.action.includes('YOUR_FORM_ID')) {
+        successMessage.textContent = 'Contact form setup is incomplete. Please call, email, or add your Formspree form ID.';
+        successMessage.style.color = '#b22a48';
+        return;
+      }
+
       if (submitButton) {
         submitButton.disabled = true;
         submitButton.textContent = 'Sending...';
       }
-      successMessage.textContent = 'Sending your enquiry…';
+      successMessage.textContent = 'Sending your enquiry...';
       successMessage.style.color = '#333';
 
       fetch(form.action, {
